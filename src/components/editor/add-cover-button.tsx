@@ -22,21 +22,22 @@ export const AddCoverButton = ({ handleCoverChange }: AddCoverButtonProps) => {
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
-        <Button>
+        <Button className="cursor-pointer">
           <Camera /> Add Cover
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-full max-w-md" align="start">
         <div className="grid grid-cols-4 gap-4">
-          {backgrounds.map((x) => (
-            <Button key={x} asChild onClick={() => handlePickCover(x)}>
-              <div
-                className={cn(
-                  "h-16 w-16 cursor-pointer overflow-hidden rounded bg-cover transition-all duration-150 hover:scale-105",
-                  x,
-                )}
-              />
-            </Button>
+          {backgrounds.map((x, i) => (
+            <div
+              onKeyDown={() => handlePickCover(x)}
+              onClick={() => handlePickCover(x)}
+              key={x}
+              className={cn(
+                "h-16 w-16 cursor-pointer overflow-hidden rounded bg-cover transition-all duration-150 hover:scale-105",
+                x,
+              )}
+            />
           ))}
         </div>
       </PopoverContent>

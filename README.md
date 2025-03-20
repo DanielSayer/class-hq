@@ -11,7 +11,7 @@ TODO (Features):
   - [ ] Schedules (i.e. school times)
   - [ ] Quick assign to period
 - [ ] Image upload
-- [ ] Youtube embedding
+- [ ] Youtube embedding`
 - [ ] Fix sidebar mess
 - [x] Allow user to create multiple lesson plans
 

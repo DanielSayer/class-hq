@@ -1,4 +1,5 @@
 import "@/styles/full-calendar.css";
+
 import dayGridPlugin from "@fullcalendar/daygrid";
 import FullCalendar from "@fullcalendar/react";
 import timeGridPlugin from "@fullcalendar/timegrid";
@@ -24,7 +25,7 @@ export function Calendar() {
             editable
             selectable
             handleWindowResize
-            height={"calc(100vh - 6rem)"}
+            height={"calc(100vh - 7rem)"}
             scrollTime="08:00:00"
             initialView="timeGridDay"
             datesSet={(args) => {

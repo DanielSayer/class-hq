@@ -19,7 +19,7 @@ export const LessonPlanCard = ({
       href={`/dashboard/${id}`}
       className="w-96 transition-all duration-200 ease-in-out hover:scale-[1.02]"
     >
-      <Card>
+      <Card className="pt-0">
         <div
           className={cn(
             "relative h-48 w-full overflow-hidden rounded-t-xl",

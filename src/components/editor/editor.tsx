@@ -55,7 +55,7 @@ export default function Editor({ lessonPlan }: EditorProps) {
             <AddCoverButton handleCoverChange={handleCoverChange} />
           </div>
           <Textarea
-            className="line-clamp-1 min-h-0 resize-none appearance-none overflow-hidden truncate border-none p-0 !text-4xl font-bold shadow-none outline-none focus:outline-none focus-visible:ring-0"
+            className="line-clamp-1 min-h-0 resize-none appearance-none overflow-hidden truncate border-none p-0 !text-4xl font-bold shadow-none outline-none focus:outline-none focus-visible:ring-0 dark:bg-background"
             rows={1}
             placeholder="Untitled Page"
             value={title}
