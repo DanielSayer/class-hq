@@ -4,14 +4,14 @@ import {
 } from "@blocknote/core";
 import type { DefaultReactSuggestionItem } from "@blocknote/react";
 import { SuggestionMenuController } from "@blocknote/react";
-import type { ZyricEditor } from "./useEditor";
+import type { ClassHQEditor } from "./useEditor";
 
 type CustomSlashMenuProps = {
-  editor: ZyricEditor;
+  editor: ClassHQEditor;
 };
 
 const getSlashMenuItems = (
-  editor: ZyricEditor,
+  editor: ClassHQEditor,
 ): DefaultReactSuggestionItem[] => {
   return getDefaultSlashMenuItems(editor).filter(
     (item) => item.group !== "Media",

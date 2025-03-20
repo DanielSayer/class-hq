@@ -38,7 +38,7 @@ export function Hero() {
           className="animate-gradient-x bg-gradient-to-r from-gray-900 via-rose-800 to-gray-900 bg-clip-text pb-2 text-4xl font-bold tracking-tight text-transparent dark:from-rose-200 dark:via-rose-100 dark:to-white md:text-6xl lg:text-7xl"
         >
           Organise Everything <br className="hidden sm:block" />
-          with zyric
+          with Class HQ
         </motion.h1>
 
         {/* Subtitle */}
@@ -48,7 +48,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300 md:text-xl"
         >
-          Effortlessly manage your classroom with zyric. Everything you need,
+          Effortlessly manage your classroom with Class HQ. Everything you need,
           Everything you need, from feature toggles to feature toggles.
         </motion.p>
 

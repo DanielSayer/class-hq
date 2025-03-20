@@ -11,4 +11,4 @@ export const useEditor = ({ initialContent }: EditorProps) => {
   });
 };
 
-export type ZyricEditor = ReturnType<typeof useEditor>;
+export type ClassHQEditor = ReturnType<typeof useEditor>;
