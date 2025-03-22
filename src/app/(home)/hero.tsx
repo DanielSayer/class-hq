@@ -1,6 +1,7 @@
 "use client";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button-variants";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";

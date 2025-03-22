@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button-variants";
 import {
   Table,
   TableBody,
@@ -62,10 +62,8 @@ export default function Page() {
     <div className="flex flex-col gap-4 px-8 pt-8">
       <div className="flex justify-between">
         <h1 className="text-3xl font-bold tracking-tight">Timetable</h1>
-        <Link href={"/dashboard/timetable/1"}>
-          <Button>
-            <Plus /> Add
-          </Button>
+        <Link href={"/dashboard/timetable/1"} className={buttonVariants()}>
+          <Plus /> Add
         </Link>
       </div>
       <div>
