@@ -41,11 +41,11 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-color-5: var(----color-5);
-  --color-color-4: var(----color-4);
-  --color-color-3: var(----color-3);
-  --color-color-2: var(----color-2);
-  --color-color-1: var(----color-1);
+  --color-rainbow-5: var(--rainbow-5);
+  --color-rainbow-4: var(--rainbow-4);
+  --color-rainbow-3: var(--rainbow-3);
+  --color-rainbow-2: var(--rainbow-2);
+  --color-rainbow-1: var(--rainbow-1);
   --animate-rainbow: rainbow var(--speed, 2s) infinite linear;
 
   @keyframes rainbow {
@@ -91,11 +91,11 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.88);
   --sidebar-border: oklch(0.922 0 286.32);
   --sidebar-ring: oklch(0.586% 0.222 17.55);
-  --color-1: oklch(0.662 0.225 25.86);
-  --color-2: oklch(0.604 0.26 301.61);
-  --color-3: oklch(0.696 0.165 251.44);
-  --color-4: oklch(0.802 0.134 224.97);
-  --color-5: oklch(0.908 0.231 132.91);
+  --rainbow-1: oklch(0.662 0.225 25.86);
+  --rainbow-2: oklch(0.604 0.26 301.61);
+  --rainbow-3: oklch(0.696 0.165 251.44);
+  --rainbow-4: oklch(0.802 0.134 224.97);
+  --rainbow-5: oklch(0.908 0.231 132.91);
 }
 
 .dark {
@@ -130,11 +130,11 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.586 0.222 17.55);
-  --color-1: hsl(0 100% 63%);
-  --color-2: hsl(270 100% 63%);
-  --color-3: hsl(210 100% 63%);
-  --color-4: hsl(195 100% 63%);
-  --color-5: hsl(90 100% 63%);
+  --rainbow-1: hsl(0 100% 63%);
+  --rainbow-2: hsl(270 100% 63%);
+  --rainbow-3: hsl(210 100% 63%);
+  --rainbow-4: hsl(195 100% 63%);
+  --rainbow-5: hsl(90 100% 63%);
 }
 
 @layer base {
