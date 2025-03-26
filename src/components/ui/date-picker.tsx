@@ -13,7 +13,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-type DatePickerProps = React.ComponentProps<typeof Button> & {
+type DatePickerProps = Omit<React.ComponentProps<typeof Button>, "onChange"> & {
   date?: Date | undefined;
   onChange?: (date: Date | undefined) => void;
 };

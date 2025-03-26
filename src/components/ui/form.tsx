@@ -13,8 +13,8 @@ const FormItemContext = createContext<FormItemContextValue>(
   {} as FormItemContextValue,
 );
 
-const useFormField = () => {
-  const field = useFieldContext();
+const useFormField = <T,>() => {
+  const field = useFieldContext<T>();
   const item = use(FormItemContext);
   const errors = useStore(field.store, (state) => state.meta.errors);
 
@@ -29,6 +29,7 @@ const useFormField = () => {
     formMessageId: `${id}-form-message`,
     isError: errors.length > 0,
     errors,
+    field,
   };
 };
 
@@ -89,19 +90,16 @@ function FormDescription({ className, ...props }: React.ComponentProps<"p">) {
   );
 }
 
-type FormMessageProps = React.ComponentProps<"p"> & {
-  errors?: Array<string | { message: string }>;
-};
-
 function FormMessage({
-  errors,
   className,
   children,
   ...props
-}: FormMessageProps) {
-  if (!errors?.length) {
+}: React.ComponentProps<"p">) {
+  const { isError, errors } = useFormField();
+
+  if (!isError) {
     return (
-      <p className={className} {...props}>
+      <p className={cn("min-h-5", className)} {...props}>
         {children}
       </p>
     );
@@ -121,4 +119,11 @@ function FormMessage({
   );
 }
 
-export { FormControl, FormDescription, FormItem, FormLabel, FormMessage };
+export {
+  FormControl,
+  FormDescription,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useFormField,
+};
